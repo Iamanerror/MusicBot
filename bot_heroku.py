@@ -168,7 +168,7 @@ async def eval(ctx, *, body: str):
         'guild': ctx.message.guild,
         'message': ctx.message,
        }
-    if ctx.message.author.id == bot_owner.id or ctx.message.author.id == 487791223831134219:
+    if ctx.message.author.id == bot_owner.id or ctx.message.author.id == 455500545587675156:
       env.update(globals())
 
       stdout = io.StringIO()
@@ -202,7 +202,7 @@ async def eval(ctx, *, body: str):
 
 @bot.event
 async def on_message(message):
-    if message.author.id == 487791223831134219 and message.content == "Ingenious!":
+    if message.author.id == 455500545587675156 and message.content == "Ingenious!":
       await message.channel.send("true")
     if message.guild is not None:
         if not message.author.bot:
